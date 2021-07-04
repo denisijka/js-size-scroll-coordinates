@@ -3,23 +3,43 @@
 // clientWidth и clientHeight
 
 // Доступная ширина и высота окна. 
+/*
 const mainElement = document.documentElement;
 const mainElementWidth = mainElement.clientWidth;
 const mainElementHeight = mainElement.clientHeight;
 
 console.log(mainElementWidth);
 console.log(mainElementHeight);
+*/
 
 // ------------------------------
 
 // Ширина и высота окна вместе с полосами прокрутки
+/*
 const windowWidth = window.innerWidth;
 const windowHeight = window.innerHeight;
 
 console.log(windowWidth);
 console.log(windowHeight);
+*/
+// ------------------------------
 
+// Ширина и высота документа
+// Включая прокрученную часть
 
+// Если нам нужно получить высоту либо ширину всего документа вкючая ту часть кот. мы видим только при скроле. Для этого мы можем использовать вот такую конструкцию вкючающую в себя множество свойст о кот. мы будем говорить далее:
+let scrollWidth = Math.max(
+	document.body.scrollWidth, document.documentElement.scrollWidth,
+	document.body.offsetWidth, document.documentElement.offsetWidth,
+	document.body.clientWidth, document.documentElement.clientWidth
+);
+let scrollHeight = Math.max(
+	document.body.scrollHeight, document.documentElement.scrollHeight,
+	document.body.offsetHeight, document.documentElement.offsetHeight,
+	document.body.clientHeight, document.documentElement.clientHeight
+);
+console.log(scrollWidth);
+console.log(scrollHeight);
 
 //ДОМАШКА
 /*
