@@ -56,11 +56,34 @@ console.log(windowScrollLeft);
 // Управление прокруткой страницы
 
 // Метод scrollBy(x,y) прокручивает страницу относительно ее текущего положения
-
+/*
 function setscrollBy() {
 	window.scrollBy(0, 50);
 	const windowScrollTop = window.pageYOffset;
 	console.log(windowScrollTop);
+}
+
+*/
+
+// Метод scrollTo(pageX,pageY) прокручивает страницу на абсолютные координаты (pageX,pageY), тоже самое что и window.scroll().
+
+function setScrollTo() {
+	// при первом клике сдвинеться вниз на 50px, а при следующем ничего не будет меняться - скролл будет оставаться на том же значении и будут выводиться в консоль те же 50px. Потому что каждый раз страница пытается прокрутиться от 0 до 50px. Если scrollBy добавлял к текущуму скролу каждый раз по 50px то scrollTo от 0 просто прокручивает до 50px.
+	window.scrollTo(0, 50);
+	const windowScrollTop = window.pageYOffset;
+	console.log(windowScrollTop);
+}
+// scrollTo с параметрами(3-я кнопка):
+function setScrollToOptions() {
+	window.scrollTo({
+		top: 500,
+		left: 0,
+		// smooth, instant,
+		// либо auto, по умолчанию auto
+		behavior: 'smooth' /* это значит что прокрутка будет плавной. */
+		// instant - это прокрутка не плавная, такая же как и у scrollTo без каких то параметров.
+		// Проблема в том что эти опции не работают в Safari и широкого приминения у них нет в таком виде.
+	});
 }
 //ДОМАШКА
 /*
