@@ -1,54 +1,81 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="stylesheet" href="css/style.css">
-		<title>JavaScript. Размеры, прокрутка, Координаты</title>
-	</head>
-	<body>
-		<div class="wrapper">
-			<h1>
-				<span class="yellow">JavaScript.</span>
-				Размеры, прокрутка, Координаты
-			</h1>
-			<h3>Урок №14</h3>
-			<div class="lesson">
-				<h1 class="lesson__title">Я заголовок</h1>
-				<div class="lesson__text">
-					<p>
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi porro cum at mollitia odio. Esse molestiae eaque nihil fugit ea deserunt. Magnam, iste ea eos autem reprehenderit architecto impedit vitae?
-					</p>
-					<p class="lesson__item">Я объект</p>
-					<p>
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi porro cum at mollitia odio. Esse molestiae eaque nihil fugit ea deserunt. Magnam, iste ea eos autem reprehenderit architecto impedit vitae?
-					</p>
-					<p>
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi porro cum at mollitia odio. Esse molestiae eaque nihil fugit ea deserunt. Magnam, iste ea eos autem reprehenderit architecto impedit vitae?
-					</p>
-					<p>
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi porro cum at mollitia odio. Esse molestiae eaque nihil fugit ea deserunt. Magnam, iste ea eos autem reprehenderit architecto impedit vitae?
-					</p>
-					<p>
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi porro cum at mollitia odio. Esse molestiae eaque nihil fugit ea deserunt. Magnam, iste ea eos autem reprehenderit architecto impedit vitae?
-					</p>
-					<p>
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi porro cum at mollitia odio. Esse molestiae eaque nihil fugit ea deserunt. Magnam, iste ea eos autem reprehenderit architecto impedit vitae?
-					</p>
-					<p>
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi porro cum at mollitia odio. Esse molestiae eaque nihil fugit ea deserunt. Magnam, iste ea eos autem reprehenderit architecto impedit vitae?
-					</p>
-					<p>
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi porro cum at mollitia odio. Esse molestiae eaque nihil fugit ea deserunt. Magnam, iste ea eos autem reprehenderit architecto impedit vitae?
-					</p>
-					<p>
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi porro cum at mollitia odio. Esse molestiae eaque nihil fugit ea deserunt. Magnam, iste ea eos autem reprehenderit architecto impedit vitae?
-					</p>
-					<p>
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi porro cum at mollitia odio. Esse molestiae eaque nihil fugit ea deserunt. Magnam, iste ea eos autem reprehenderit architecto impedit vitae?
-					</p>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+	<title>JavaScript. Размеры, прокрутка, Координаты</title>
+</head>
+
+<body>
+	<div class="wrapper">
+		<h1>
+			<span class="yellow">JavaScript.</span>
+			Размеры, прокрутка, Координаты
+		</h1>
+		<h3>Урок №14</h3>
+		<div class="lesson">
+			<h1 class="lesson__title">Я заголовок</h1>
+			<div class="lesson__text">
+				<p>
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi porro cum at mollitia odio. Esse
+					molestiae eaque nihil fugit ea deserunt. Magnam, iste ea eos autem reprehenderit architecto impedit
+					vitae?
+				</p>
+				<p class="lesson__item">Я объект</p>
+				<div class="btn-items">
+					<button class="button" onclick="setscrollBy()">Прокрути на 50px(scrollBy)</button>
+					<button class="button" onclick="setscrollBy()">Прокрути на 50px(scrollTo)</button>
+					<button class="button" onclick="setscrollBy()">Прокрути на 500px(scrollTo + опции)</button>
 				</div>
-				<!-- 
+				<p>
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi porro cum at mollitia odio. Esse
+					molestiae eaque nihil fugit ea deserunt. Magnam, iste ea eos autem reprehenderit architecto impedit
+					vitae?
+				</p>
+				<p>
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi porro cum at mollitia odio. Esse
+					molestiae eaque nihil fugit ea deserunt. Magnam, iste ea eos autem reprehenderit architecto impedit
+					vitae?
+				</p>
+				<p>
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi porro cum at mollitia odio. Esse
+					molestiae eaque nihil fugit ea deserunt. Magnam, iste ea eos autem reprehenderit architecto impedit
+					vitae?
+				</p>
+				<p>
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi porro cum at mollitia odio. Esse
+					molestiae eaque nihil fugit ea deserunt. Magnam, iste ea eos autem reprehenderit architecto impedit
+					vitae?
+				</p>
+				<p>
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi porro cum at mollitia odio. Esse
+					molestiae eaque nihil fugit ea deserunt. Magnam, iste ea eos autem reprehenderit architecto impedit
+					vitae?
+				</p>
+				<p>
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi porro cum at mollitia odio. Esse
+					molestiae eaque nihil fugit ea deserunt. Magnam, iste ea eos autem reprehenderit architecto impedit
+					vitae?
+				</p>
+				<p>
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi porro cum at mollitia odio. Esse
+					molestiae eaque nihil fugit ea deserunt. Magnam, iste ea eos autem reprehenderit architecto impedit
+					vitae?
+				</p>
+				<p>
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi porro cum at mollitia odio. Esse
+					molestiae eaque nihil fugit ea deserunt. Magnam, iste ea eos autem reprehenderit architecto impedit
+					vitae?
+				</p>
+				<p>
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi porro cum at mollitia odio. Esse
+					molestiae eaque nihil fugit ea deserunt. Magnam, iste ea eos autem reprehenderit architecto impedit
+					vitae?
+				</p>
+			</div>
+			<!-- 
 				<div class="lesson__block">
 					<p>
 						Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta vel blanditiis consectetur pariatur modi, animi id saepe excepturi fugit ut culpa alias officiis minus, in consequatur. Veritatis porro accusamus consequatur!
@@ -95,8 +122,9 @@
 					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum amet nobis vel eaque doloribus perspiciatis ex est dicta atque nulla, nisi quam ab laboriosam placeat sit, eveniet delectus distinctio ratione!</p>
 				</div>
 				-->
-			</div>
 		</div>
-		<script src="js/script.js"></script>
-	</body>
+	</div>
+	<script src="js/script.js"></script>
+</body>
+
 </html>

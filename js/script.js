@@ -46,11 +46,22 @@ console.log(scrollHeight);
 
 // Получить кол-во прокрученых пикселей
 // Только для чтения
+/*
 const windowScrollTop = window.pageYOffset;
 const windowScrollLeft = window.pageXOffset;
 console.log(windowScrollTop);
 console.log(windowScrollLeft);
+*/
+// ------------------------------
+// Управление прокруткой страницы
 
+// Метод scrollBy(x,y) прокручивает страницу относительно ее текущего положения
+
+function setscrollBy() {
+	window.scrollBy(0, 50);
+	const windowScrollTop = window.pageYOffset;
+	console.log(windowScrollTop);
+}
 //ДОМАШКА
 /*
 1. Изучить теорию
