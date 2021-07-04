@@ -27,7 +27,8 @@ console.log(windowHeight);
 // Ширина и высота документа
 // Включая прокрученную часть
 
-// Если нам нужно получить высоту либо ширину всего документа вкючая ту часть кот. мы видим только при скроле. Для этого мы можем использовать вот такую конструкцию вкючающую в себя множество свойст о кот. мы будем говорить далее:
+// Если нам нужно получить высоту либо ширину всего документа вкючая ту часть кот. мы видим только при скроле. Для этого мы можем использовать вот такую конструкцию вкючающую в себя множество свойст о кот. мы будем говорить далее, но из-за разнице в браузерах и возможный ошибках чаще всего используют именно такой подход с помощу математической функции Math.max мы получаем максимальное значение из присутствующих:
+/*
 let scrollWidth = Math.max(
 	document.body.scrollWidth, document.documentElement.scrollWidth,
 	document.body.offsetWidth, document.documentElement.offsetWidth,
@@ -40,6 +41,15 @@ let scrollHeight = Math.max(
 );
 console.log(scrollWidth);
 console.log(scrollHeight);
+*/
+// ------------------------------
+
+// Получить кол-во прокрученых пикселей
+// Только для чтения
+const windowScrollTop = window.pageYOffset;
+const windowScrollLeft = window.pageXOffset;
+console.log(windowScrollTop);
+console.log(windowScrollLeft);
 
 //ДОМАШКА
 /*
