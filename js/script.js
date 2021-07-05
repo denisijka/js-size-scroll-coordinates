@@ -271,7 +271,7 @@ console.log(elementclientHeight);
 
 // Получаем объект
 
-const block = document.querySelector('.lesson__block');
+// const block = document.querySelector('.lesson__block');
 
 /*
 Размеры объекта включающие в себя
@@ -279,16 +279,36 @@ const block = document.querySelector('.lesson__block');
 В остальном работают как clientWidth/clientHeight,
 scrollWidth и scrollHeight
 */
-
+/*
 const elementScrollWidth = block.scrollWidth;
 const elementScrollHeight = block.scrollHeight;
 
 console.log(elementScrollWidth);
 console.log(elementScrollHeight);
+*/
+// ------------------------------
 
+// Метрики элементов на странице
 
+// Получаем объект
 
+const block = document.querySelector('.lesson__block');
 
+/*
+Размеры прокрученной области 
+scrollLeft и scrollTop
+*/
+/*
+Эти свойства работают не только для чтения 
+и мы можем задать изначально прокрученную часть 
+*/
+block.scrollTop = 150; /* что подразумевает 150px сверху */
+
+const elementScrollLeft = block.scrollLeft;
+const elementScrollTop = block.scrollTop;
+
+console.log(elementScrollLeft);
+console.log(elementScrollTop);
 
 
 
