@@ -223,7 +223,7 @@ console.log(elementOffsetHeight);
 // Метрики элементов на странице
 
 // Получаем объект
-
+/*
 const block = document.querySelector('.lesson__block');
 
 // Отступы внутренней части элемента от внешней
@@ -234,14 +234,36 @@ const elementclientLeft = block.clientLeft;
 
 console.log(elementclientTop);
 console.log(elementclientLeft);
+*/
 /*
  Мы видим 2 значения 20 и 20. Это значения которые равны ширине рамки, ширине border.
  clientTop и clientLeft возращают не размер рамки, а именно отступ внутренней части элемента от внешней
 */
 
+// ------------------------------
 
+// Метрики элементов на странице
 
+// Получаем объект
 
+const block = document.querySelector('.lesson__block');
+
+/*
+Размеры объекта без
+рамок и полосы прокрутки
+clientWidth и clientHeight
+*/
+
+const elementclientWidth = block.clientWidth;
+const elementclientHeight = block.clientHeight;
+
+console.log(elementclientWidth);
+console.log(elementclientHeight);
+
+/*
+Общая ширина (offsetWidth) - рамка слева - рамка справа - скролл
+500 - 20 - 20 - 17 = 443
+*/
 
 
 
