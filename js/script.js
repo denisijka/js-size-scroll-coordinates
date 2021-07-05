@@ -145,8 +145,35 @@ function setEnableDisableScroll() {
 Получите координаты любых трех элементов на странице
 */
 
+// ------------------------------
 
+// Метрики элементов на странице
 
+// Получаем объект
+const block = document.querySelector('.lesson__block');
+
+// Позиция объекта
+// Свойство offsetParent, offsetLeft и offsetTop
+
+// Получаем родительский элемент относительно кот. позицинирован наш объект
+const elementOffsetParent = block.offsetParent;
+
+/*
+Это будет ближайший предок, кот. удовлетворяет следующим условиям:
+
+1. Является CSS-позиционированным (css-свойство position равно absolute, relative, fixed или sticky)
+2. Или теги <td>, <th>, <table>,
+3. или <body>.
+*/
+
+console.log(elementOffsetParent);
+
+/*
+Ситуация в кот. offsetParent равно null:
+1.Для скрытых элементов (с css - свойство display: none; иди когда его нет в документе).
+2.Для элементов <body> и <html>.
+3.Для элементо с position:fixed;
+*/
 
 
 
