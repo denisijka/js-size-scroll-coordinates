@@ -246,30 +246,45 @@ console.log(elementclientLeft);
 
 // Получаем объект
 
-const block = document.querySelector('.lesson__block');
+// const block = document.querySelector('.lesson__block');
 
 /*
 Размеры объекта без
 рамок и полосы прокрутки
 clientWidth и clientHeight
 */
-
+/*
 const elementclientWidth = block.clientWidth;
 const elementclientHeight = block.clientHeight;
 
 console.log(elementclientWidth);
 console.log(elementclientHeight);
-
+*/
 /*
 Общая ширина (offsetWidth) - рамка слева - рамка справа - скролл
 500 - 20 - 20 - 17 = 443
 */
 
+// ------------------------------
 
+// Метрики элементов на странице
 
+// Получаем объект
 
+const block = document.querySelector('.lesson__block');
 
+/*
+Размеры объекта включающие в себя
+прокрученную (которую не видно) часть.
+В остальном работают как clientWidth/clientHeight,
+scrollWidth и scrollHeight
+*/
 
+const elementScrollWidth = block.scrollWidth;
+const elementScrollHeight = block.scrollHeight;
+
+console.log(elementScrollWidth);
+console.log(elementScrollHeight);
 
 
 
