@@ -201,7 +201,7 @@ const elementOffsetTop = block.offsetTop;
 // ------------------------------
 
 // Метрики элементов на странице
-
+/*
 // Получаем объект
 const block = document.querySelector('.lesson__block');
 
@@ -217,17 +217,27 @@ console.log(elementOffsetHeight);
 // Эти значения включают в себя и рамку border и padding и полосу прокрутки. Одним словом это общая ширина и высота подопытного объекта.
 
 // Метрики для не показываемых элементов равны нулю.
+*/
+// ------------------------------
 
+// Метрики элементов на странице
 
+// Получаем объект
 
+const block = document.querySelector('.lesson__block');
 
+// Отступы внутренней части элемента от внешней
+// clientTop и clientLeft
 
+const elementclientTop = block.clientTop;
+const elementclientLeft = block.clientLeft;
 
-
-
-
-
-
+console.log(elementclientTop);
+console.log(elementclientLeft);
+/*
+ Мы видим 2 значения 20 и 20. Это значения которые равны ширине рамки, ширине border.
+ clientTop и clientLeft возращают не размер рамки, а именно отступ внутренней части элемента от внешней
+*/
 
 
 
