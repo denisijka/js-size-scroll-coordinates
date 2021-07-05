@@ -178,7 +178,7 @@ function setEnableDisableScroll() {
 // ------------------------------
 
 // Метрики элементов на странице
-
+/*
 // Получаем объект
 const block = document.querySelector('.lesson__block');
 
@@ -190,13 +190,33 @@ const elementOffsetParent = block.offsetParent;
 
 console.log(elementOffsetParent);
 
+
 // Получаем позицию объекта относительно предка (offsetParent)
 const elementOffsetLeft = block.offsetLeft;
 const elementOffsetTop = block.offsetTop;
 
-console.log(elementOffsetLeft);/* наш объект смещен влево на 520px относительно <div class="lesson"> */
-console.log(elementOffsetTop);/* а сверху он смещен на 1015px относительно <div class="lesson">  */
+// console.log(elementOffsetLeft);/* наш объект смещен влево на 520px относительно <div class="lesson"> */
+// console.log(elementOffsetTop);/* а сверху он смещен на 1015px относительно <div class="lesson">  */
 
+// ------------------------------
+
+// Метрики элементов на странице
+
+// Получаем объект
+const block = document.querySelector('.lesson__block');
+
+// Общие размеры объекта
+// offsetWidth и offsetHeight
+
+// Получаем размеры объекта при box-sizing: border-box;
+const elementOffsetWidth = block.offsetWidth;
+const elementOffsetHeight = block.offsetHeight;
+
+console.log(elementOffsetWidth);
+console.log(elementOffsetHeight);
+// Эти значения включают в себя и рамку border и padding и полосу прокрутки. Одним словом это общая ширина и высота подопытного объекта.
+
+// Метрики для не показываемых элементов равны нулю.
 
 
 

@@ -74,6 +74,7 @@ h2 {
   color: #fff;
 }
 .lesson__block {
+  /* display: none; */ /* если скрыть объект, то offsetWidth и offsetHeight вернут нули. */
   margin: 0px auto;
   width: 500px;
   height: 300px;
