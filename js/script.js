@@ -150,13 +150,13 @@ function setEnableDisableScroll() {
 // Метрики элементов на странице
 
 // Получаем объект
-const block = document.querySelector('.lesson__block');
+// const block = document.querySelector('.lesson__block');
 
 // Позиция объекта
 // Свойство offsetParent, offsetLeft и offsetTop
 
 // Получаем родительский элемент относительно кот. позицинирован наш объект
-const elementOffsetParent = block.offsetParent;
+// const elementOffsetParent = block.offsetParent;
 
 /*
 Это будет ближайший предок, кот. удовлетворяет следующим условиям:
@@ -166,7 +166,7 @@ const elementOffsetParent = block.offsetParent;
 3. или <body>.
 */
 
-console.log(elementOffsetParent);
+// console.log(elementOffsetParent);
 
 /*
 Ситуация в кот. offsetParent равно null:
@@ -175,8 +175,27 @@ console.log(elementOffsetParent);
 3.Для элементо с position:fixed;
 */
 
+// ------------------------------
 
+// Метрики элементов на странице
 
+// Получаем объект
+const block = document.querySelector('.lesson__block');
+
+// Позиция объекта
+// Свойства offsetParent, offsetLeft и offsetTop
+
+// Получаем родительский элемент относительно которого позицинировал наш объект
+const elementOffsetParent = block.offsetParent;
+
+console.log(elementOffsetParent);
+
+// Получаем позицию объекта относительно предка (offsetParent)
+const elementOffsetLeft = block.offsetLeft;
+const elementOffsetTop = block.offsetTop;
+
+console.log(elementOffsetLeft);/* наш объект смещен влево на 520px относительно <div class="lesson"> */
+console.log(elementOffsetTop);/* а сверху он смещен на 1015px относительно <div class="lesson">  */
 
 
 
