@@ -292,7 +292,7 @@ console.log(elementScrollHeight);
 
 // Получаем объект
 
-const block = document.querySelector('.lesson__block');
+// const block = document.querySelector('.lesson__block');
 
 /*
 Размеры прокрученной области 
@@ -302,15 +302,33 @@ scrollLeft и scrollTop
 Эти свойства работают не только для чтения 
 и мы можем задать изначально прокрученную часть 
 */
-block.scrollTop = 150; /* что подразумевает 150px сверху */
-
+// block.scrollTop = 150; /* что подразумевает 150px сверху */
+/*
 const elementScrollLeft = block.scrollLeft;
 const elementScrollTop = block.scrollTop;
 
 console.log(elementScrollLeft);
 console.log(elementScrollTop);
+*/
+// ------------------------------
 
+// Метрики элементов на странице
 
+// Получаем объект
+
+const block = document.querySelector('.lesson__block');
+
+// Методы управления прокруткой
+// scrollBy, scrollTo и scrollIntoView
+// работают и для объекта у которого есть полоса прокрутки
+
+function setElementScrollBy() {
+	block.scrollBy({
+		top: 20,
+		left: 0,
+		behavior: 'smooth'
+	});
+}
 
 //========================================================================================================================================================
 //========================================================================================================================================================
